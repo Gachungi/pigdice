@@ -1,8 +1,8 @@
 # Project Name
 
-[Project site](https://example.com)
+[Project site](https://gachungi.github.io/pigdice/)
 
-Authors: [Wambui](https://your-website-or-email.com) + other authors
+Author/s: [Wambui]
 
 ## Description
 
@@ -18,8 +18,8 @@ This is a Pig Dice
 
 Make sure you have git installed. On the terminal, navigate to your workspace directory and run
 
-```bash
+
 
 ## Contributing
 
-I welcome pull requests and any further contribution.
+I welcome pull requests and any further contributions.
