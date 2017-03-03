@@ -10,7 +10,10 @@
     text-align: center;
 }
 
+.instructions{
+	float: right;
 }
+
 
 .h1{
 	color: gold

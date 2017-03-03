@@ -1,5 +1,5 @@
 var Pig = {
-  player1: 0,
+  firstplayer: 0,
   player2: 0,
   currentScore: 0,
   activePlayer: 1,
@@ -16,7 +16,7 @@ var Pig = {
   },
   switchActivePlayer: function(){
     if(this.activePlayer === 1){
-      this.player1 += this.currentScore;
+      this.firstplayer += this.currentScore;
       this.activePlayer = 2;
     }else{
       this.player2 += this.currentScore;
@@ -36,14 +36,14 @@ $(document).ready(function(){
   var checkPlayer = function() {
     var player = game.activePlayer;
     if (player === 1) {
-      $("h2#player1").css('color', 'green');
-      $("h2#player2").css('color', 'grey');
+      $("h2#firstplayer").css('color', 'blue');
+      $("h2#player2").css('color', 'maroon');
       $("#player2buttons").hide();
-      $("#player1buttons").show();
+      $("#firstplayerbuttons").show();
     } else {
-      $("h2#player2").css('color', 'green');
-      $("h2#player1").css('color', 'grey');
-      $("#player1buttons").hide();
+      $("h2#player2").css('color', 'blue');
+      $("h2#firstplayer").css('color', 'maroon');
+      $("#firstplayerbuttons").hide();
       $("#player2buttons").show();
     }
   };
@@ -87,7 +87,7 @@ $(document).ready(function(){
   }
 
   var winCheck = function(){
-    if(game.player1 >= 100){
+    if(game.firstplayer >= 100){
       alert("Player one wins!!");
       game = Object.create(Pig);
       player1wins+=1;
